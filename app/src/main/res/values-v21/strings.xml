@@ -18,7 +18,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="title_activity_tablero">BIT</string>
+    <string name="title_activity_tablero">ISBIT</string>
     <string name="title_activity_funds">Fondos</string>
 
     <string name="title_section1">Fondos</string>
