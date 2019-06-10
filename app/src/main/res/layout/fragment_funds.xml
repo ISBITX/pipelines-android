@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="FundsFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ticker_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/section_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/activated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@+id/mxn_balance_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8sp"
+            >
+            <ImageView
+                android:id="@+id/logo_mxn"
+                android:background="@mipmap/ic_mxn"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginRight="25sp"
+                android:layout_marginEnd="25sp"
+                android:contentDescription="@string/logo_mxn"
+
+
+                />
+            <TextView
+                android:id="@+id/symbol_mxn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_mxn"
+                android:textSize="@dimen/font_size_medium"
+                android:text="@string/mxn" />
+
+            <TextView
+                android:id="@+id/available_mxn_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_large"
+                android:layout_toRightOf="@+id/logo_mxn"
+                android:layout_toEndOf="@+id/logo_mxn"
+
+                />
+
+            <ImageView
+                android:id="@+id/mxn_padlock"
+                android:background="@drawable/ic_padlock"
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:layout_toRightOf="@+id/symbol_mxn"
+                android:layout_toEndOf="@+id/symbol_mxn"
+                android:layout_below="@+id/available_mxn_label"
+                android:layout_alignLeft="@+id/available_mxn_label"
+                android:layout_alignStart="@+id/available_mxn_label"
+                android:contentDescription="@string/fondos_congelados"
+
+                />
+
+            <TextView
+                android:id="@+id/frozen_mxn_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/mxn_padlock"
+                android:layout_below="@+id/available_mxn_label"
+                android:textSize="@dimen/font_size_medium"
+                android:layout_toEndOf="@+id/mxn_padlock"
+
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@+id/btc_balance_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8sp"
+            >
+            <ImageView
+                android:id="@+id/logo_btc"
+                android:background="@drawable/ic_bitcoin_logo"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:paddingRight="60sp"
+                android:paddingEnd="60sp"
+                android:paddingLeft="0sp"
+                android:paddingStart="0sp"
+                android:layout_marginRight="25sp"
+                android:layout_marginEnd="25sp"
+                android:contentDescription="@string/logo_btc"
+                />
+            <TextView
+                android:id="@+id/symbol_btc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_btc"
+                android:textSize="@dimen/font_size_medium"
+                android:text="@string/btc" />
+
+            <TextView
+                android:id="@+id/available_btc_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_large"
+                android:layout_toRightOf="@+id/logo_btc"
+                android:layout_toEndOf="@+id/logo_btc"
+                />
+
+            <ImageView
+                android:id="@+id/btc_padlock"
+                android:background="@drawable/ic_padlock"
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:layout_toRightOf="@+id/symbol_btc"
+                android:layout_toEndOf="@+id/symbol_btc"
+                android:layout_below="@+id/available_btc_label"
+                android:layout_alignLeft="@+id/available_btc_label"
+                android:layout_alignStart="@+id/available_btc_label"
+                android:contentDescription="@string/fondos_congelados"
+                />
+
+            <TextView
+                android:id="@+id/frozen_btc_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/available_btc_label"
+                android:layout_toRightOf="@+id/btc_padlock"
+                android:layout_toEndOf="@+id/btc_padlock"
+                android:textSize="@dimen/font_size_medium"
+
+                />
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

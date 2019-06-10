@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ISBIT</string>
+    <string name="hello_world">ISBIT</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Ingresa tu token</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_clave_acceso">Clave Acceso</string>
+    <string name="prompt_clave_privada">Clave Privada</string>
+    <string name="action_sign_in">Activar Token</string>
+    <string name="action_sign_in_short">Activar Token</string>
+    <string name="error_invalid_email">Esta Clave de Acceso es Inválida</string>
+    <string name="error_invalid_password">Esta Clave Privada es Inválida</string>
+    <string name="error_incorrect_password">Esta Clave Privada es Incorrecta</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_tablero">BIT</string>
+    <string name="title_activity_funds">Fondos</string>
+
+    <string name="title_section1">Fondos</string>
+    <string name="title_section2">Intercambiar</string>
+    <string name="title_section3">Depositar</string>
+    <string name="title_section4">Salir (Borrar Token)</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="qr_not_installed_warning">Es necesario instalar Lector de Códigos QR antes de continuar</string>
+    <string name="goto_googleplay_and_download">Obtener Escaner de Códigos QR</string>
+
+    <string name="cancel">Cancelar</string>
+    <string name="market_label">Mercado BTC/MXN</string>
+    <string name="comprar">Comprar</string>
+    <string name="vender">Vender</string>
+    <string name="mxn">MXN</string>
+    <string name="precio">Precio</string>
+    <string name="precio_ask">Precio</string>
+    <string name="bid_price_et_hint">0.0</string>
+    <string name="ask_price_et_hint">0.0</string>
+    <string name="cantidad">Cant.</string>
+    <string name="share_using" >Compartir via</string>
+    <string name="qr_cont_desc_deposit_address">Dirección de Depósito</string>
+    <string name="logo_mxn">Logo MXN</string>
+    <string name="logo_btc">Logo BTC</string>
+    <string name="fondos_congelados">Fondos Congelados</string>
+    <string name="num_step_1">1.</string>
+    <string name="heading_step_1">Ingresa al Portal</string>
+    <string name="description_step_1">Desde una computadora de escritorio ingresa al portal web de ISBIT.</string>
+    <string name="num_step_2">2.</string>
+    <string name="heading_step_2">Crear Token</string>
+    <string name="description_step_2">Desde la configuración de perfil de tu cuenta, selecciona Crear Token. Necesitarás tener la Vertificación de Dos Pasos Activada.</string>
+    <string name="num_step_3">3.</string>
+    <string name="heading_step_3">Escanear Código QR</string>
+    <string name="description_step_3">Escanea el Código QR que se te mostrará después de crear el Token con éxito en el portal de ISBIT.</string>
+    <string name="escanear_qr_para_ingresar">ESCANEAR QR PARA INGRESAR</string>
+    <string name="direcci_n_para_depositar_btc">Dirección para depositar BTC</string>
+    <string name="obteniendo_direcci_n_para_depositar">Obteniendo dirección para depositar...</string>
+    <string name="btc">BTC</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="enviar">Enviar</string>
+    <string name="_0_0">0.0</string>
+    <string name="total">Total</string>
+    <string name="member_is_active">"Activo? "</string>
+
+</resources>
