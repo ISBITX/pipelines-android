@@ -32,8 +32,8 @@ steps:
   inputs:
     apkFiles: '**/*.apk'
     jarsign: true
-    jarsignerKeystoreFile: 'pathToYourKeystoreFile'
+    jarsignerKeystoreFile: 'isbit_android_keystore_2019.jks'
     jarsignerKeystorePassword: '$(jarsignerKeystorePassword)'
-    jarsignerKeystoreAlias: 'yourKeystoreAlias'
+    jarsignerKeystoreAlias: 'isbit'
     jarsignerKeyPassword: '$(jarsignerKeyPassword)'
     zipalign: true    
