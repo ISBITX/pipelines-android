@@ -9,9 +9,10 @@ pool:
 steps:
 - task: Gradle@2
   inputs:
+    options: '--warning-mode=all'
     workingDirectory: ''
     gradleWrapperFile: 'gradlew'
-    gradleOptions: '-Xmx3072m --debug'
+    gradleOptions: '-Xmx3072m'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'assembleProd'
