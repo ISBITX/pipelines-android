@@ -40,5 +40,5 @@ steps:
 - task: GooglePlayRelease@2
   inputs:
     serviceEndpoint: 'isbit_android_google_play'
-    apkFile: '**/*.apk'
+    apkFile: '**/*.app-prod-release.apk'
     track: 'internal'
