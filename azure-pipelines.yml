@@ -27,3 +27,18 @@ steps:
     pathToPublish: '$(build.artifactStagingDirectory)'
     artifactName: 'drop'
     artifactType: 'container'
+
+- task: AndroidSigning@2
+  inputs:
+    apkFiles: '**/*.apk'
+    jarsign: true
+    jarsignerKeystoreFile: 'isbit_android_keystore_2019.jks'
+    jarsignerKeystorePassword: '$(jarsignerKeystorePassword)'
+    jarsignerKeystoreAlias: 'isbit'
+    jarsignerKeyPassword: '$(jarsignerKeyPassword)'
+    zipalign: true    
+- task: GooglePlayRelease@2
+  inputs:
+    serviceEndpoint: 'isbit_android_google_play'
+    apkFile: '**/*.apk'
+    track: 'internal'
