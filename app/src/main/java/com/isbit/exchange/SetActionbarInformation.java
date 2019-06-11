@@ -1,4 +1,4 @@
-package com.isbit.m;
+package com.isbit.exchange;
 
 /**
  * Created by Sebastian on 03/01/2017.

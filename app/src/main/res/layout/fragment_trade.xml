@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    tools:context="com.isbit.m.TradeFragment">
+    tools:context="com.isbit.exchange.TradeFragment">
 
     <!-- TODO: Update blank fragment layout -->
 

@@ -1,4 +1,4 @@
-package com.isbit.m;
+package com.isbit.exchange;
 
 import android.app.ActionBar;
 import android.net.Uri;

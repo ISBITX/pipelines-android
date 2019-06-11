@@ -1,4 +1,4 @@
-package com.isbit.m;
+package com.isbit.exchange;
 
 import android.app.Activity;
 import android.support.v4.app.FragmentActivity;
@@ -27,7 +27,7 @@ public class Tablero extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.isbit.m.R.layout.activity_tablero);
+        setContentView(com.isbit.exchange.R.layout.activity_tablero);
 
         final Context context = getApplicationContext();
         /*
@@ -107,7 +107,7 @@ public class Tablero extends FragmentActivity {
 
         initIsbit(tablero,Tablero.this);
 
-        Button button = (Button) findViewById(com.isbit.m.R.id.button_acceder);
+        Button button = (Button) findViewById(com.isbit.exchange.R.id.button_acceder);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -183,7 +183,7 @@ public class Tablero extends FragmentActivity {
 
     public void initIsbit(final View rootView, final Activity activity){
             final ProgressBar pb  = (ProgressBar) rootView.findViewById(R.id.progressBar);
-        final Button access_button = (Button) findViewById(com.isbit.m.R.id.button_acceder);
+        final Button access_button = (Button) findViewById(com.isbit.exchange.R.id.button_acceder);
 
 
         DS ds = new DS(activity);
