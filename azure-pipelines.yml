@@ -37,3 +37,8 @@ steps:
     jarsignerKeystoreAlias: 'isbit'
     jarsignerKeyPassword: '$(jarsignerKeyPassword)'
     zipalign: true    
+- task: GooglePlayRelease@2
+  inputs:
+    serviceEndpoint: 'isbit_android_google_play'
+    apkFile: '**/*.apk'
+    track: 'internal'
