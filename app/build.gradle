@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('/home/sebastian/android_isbit_2019/workspace/isbit_android_certs/isbit_android_keystore_2019.jks')
+            keyAlias = 'isbit'
+            storePassword '4ohNCAY4zfQNRRQJPGJM'
+            keyPassword '4ohNCAY4zfQNRRQJPGJM'
+        }
+    }
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
