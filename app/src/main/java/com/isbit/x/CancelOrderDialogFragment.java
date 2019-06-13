@@ -1,4 +1,4 @@
-package com.isbit.exchange;
+package com.isbit.x;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

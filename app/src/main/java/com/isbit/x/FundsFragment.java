@@ -1,4 +1,4 @@
-package com.isbit.exchange;
+package com.isbit.x;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -165,7 +165,7 @@ public class FundsFragment extends Fragment {
                                 Double buy = json_ticker.getDouble("buy");
                                 Double sell = json_ticker.getDouble("sell");
                                 Double ultimo_precio = json_ticker.getDouble("last");
-                                TextView ticker_tv = (TextView) getActivity().findViewById(com.isbit.exchange.R.id.ticker_tv);
+                                TextView ticker_tv = (TextView) getActivity().findViewById(com.isbit.x.R.id.ticker_tv);
                                 ticker_tv.setText(
                                         " precio venta: " + sell + "\n ulimo precio: " + ultimo_precio + " \n precio compra: " + buy + " \n fecha: " + (new Date(at * 1000)).toString());
                             } catch (JSONException e) {

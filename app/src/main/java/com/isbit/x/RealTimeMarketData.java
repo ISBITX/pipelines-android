@@ -1,4 +1,4 @@
-package com.isbit.exchange;
+package com.isbit.x;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -37,13 +37,13 @@ public class RealTimeMarketData extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.isbit.exchange.R.layout.activity_main);
+        setContentView(com.isbit.x.R.layout.activity_main);
 
         connectWebSocket();
 
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .add(com.isbit.exchange.R.id.container, new PlaceholderFragment())
+                    .add(com.isbit.x.R.id.container, new PlaceholderFragment())
                     .commit();
         }
     }
@@ -53,7 +53,7 @@ public class RealTimeMarketData extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(com.isbit.exchange.R.menu.main, menu);
+        getMenuInflater().inflate(com.isbit.x.R.menu.main, menu);
         return true;
     }
 
@@ -63,7 +63,7 @@ public class RealTimeMarketData extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         switch (item.getItemId()) {
-            case com.isbit.exchange.R.id.action_settings:
+            case com.isbit.x.R.id.action_settings:
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -80,7 +80,7 @@ public class RealTimeMarketData extends Activity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(com.isbit.exchange.R.layout.fragment_main, container, false);
+            View rootView = inflater.inflate(com.isbit.x.R.layout.fragment_main, container, false);
             return rootView;
         }
     }
@@ -113,7 +113,7 @@ public class RealTimeMarketData extends Activity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        TextView textView = (TextView)findViewById(com.isbit.exchange.R.id.messages);
+                        TextView textView = (TextView)findViewById(com.isbit.x.R.id.messages);
                         textView.setText(textView.getText() + "\n" + message);
 
 
@@ -183,7 +183,7 @@ public class RealTimeMarketData extends Activity {
     }
 
     public void sendMessage(View view) {
-        EditText editText = (EditText)findViewById(com.isbit.exchange.R.id.message);
+        EditText editText = (EditText)findViewById(com.isbit.x.R.id.message);
         mWebSocketClient.send(editText.getText().toString());
         editText.setText("");
     }
